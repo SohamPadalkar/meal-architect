@@ -12,6 +12,11 @@ load_dotenv()
 
 app = FastAPI(title="Meal Architect API", version="1.0.0")
 
+
+@app.get("/")
+def health_check():
+    return {"status": "ok", "message": "Meal Architect is running!"}
+
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
