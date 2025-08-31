@@ -143,7 +143,7 @@ Create a recipe and respond ONLY with valid JSON:
 {{"title": "Recipe Name", "ingredients": ["ingredient1", "ingredient2"], "instructions": ["step1", "step2"], "cooking_time": "X minutes", "chef_notes": "Chef tip"}}"""
         
         payload = {
-            "model": "mistralai/mistral-7b-instruct:free",  # This one works!
+            "model": "anthropic/claude-3-haiku-20240307",  # This one works!
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
@@ -155,7 +155,7 @@ Create a recipe and respond ONLY with valid JSON:
         print(f"🌐 Making request to OpenRouter...")
         
         try:
-            async with httpx.AsyncClient(timeout=30.0) as client:
+            async with httpx.AsyncClient(timeout=90.0) as client:
                 response = await client.post(
                     f"{self.base_url}/chat/completions",
                     headers=headers,
