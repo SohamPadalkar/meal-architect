@@ -27,7 +27,7 @@ Our AI chefs are the heart and soul of Meal Architect, each with a unique cookin
 | Chef | Illustration | Philosophy |
 | :--- | :--- | :--- |
 | **Gordon Ramsay** | ![Gordon Ramsay](frontend/public/chef-gordon.png) | **Fiery Precision.** Expect restaurant-quality techniques, a focus on perfection, and no-nonsense instructions. |
-| **Nonna Nina** | ![Nonna Nina](frontend/public/chef-nina.png.png) | **Traditional Comfort.** Get ready for warm, hearty, family-style meals made with love and time-honored traditions. |
+| **Nonna Nina** | ![Nonna Nina](frontend/public/chef-nina.png) | **Traditional Comfort.** Get ready for warm, hearty, family-style meals made with love and time-honored traditions. |
 | **Sanjyot Keer** | ![Sanjyot Keer](frontend/public/chef-sanjyot.png) | **Modern Fusion.** Explore creative, innovative dishes that blend modern techniques with the vibrant flavors of Indian cuisine. |
 
 ---
