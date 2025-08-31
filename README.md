@@ -108,15 +108,4 @@ The frontend will be running at `http://localhost:5173`.
 This project was built for the Maximally AI Shipathon. We aimed to create a solution that is not only technically impressive but also genuinely useful, fun, and delightful for the end-user.
 ```
 
-### **Final Step:**
-
-1.  Create the `README.md` file in the root of your project.
-2.  Copy and paste the text above into it.
-3.  **Crucially, go through and replace the placeholder URLs and username.**
-4.  Commit and push it to GitHub:
-    ```bash
-    git add README.md
-    git commit -m "docs: Add comprehensive project README"
-    git push origin main
-    ```
 
