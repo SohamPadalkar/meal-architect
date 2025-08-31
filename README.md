@@ -105,7 +105,7 @@ The frontend will be running at `http://localhost:5173`.
 
 ## 🏆 Hackathon Submission
 
-This project was built for the [Name of Hackathon]. We aimed to create a solution that is not only technically impressive but also genuinely useful, fun, and delightful for the end-user.
+This project was built for the Maximally AI Shipathon. We aimed to create a solution that is not only technically impressive but also genuinely useful, fun, and delightful for the end-user.
 ```
 
 ### **Final Step:**
