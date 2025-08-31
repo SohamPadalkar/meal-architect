@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-50: #fef8f0;
+  --primary-100: #fdefd9;
+  --primary-500: #f59e0b;
+  --primary-600: #d97706;
+  --primary-900: #92400e;
+  
+  --neutral-50: #fafafa;
+  --neutral-100: #f4f4f5;
+  --neutral-800: #27272a;
+  --neutral-900: #18181b;
+  
+  --gradient-warm: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  --gradient-cool: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  --gradient-dark: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--gradient-warm);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile-optimized touch targets */
+@media (max-width: 768px) {
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  /* Ensure minimum touch target size */
+  button, .cursor-pointer {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.chef-card-selected {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 768px) {
+  .chef-card-selected {
+    transform: translateY(-8px) scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.floating { 
+  animation: float 3s ease-in-out infinite; 
+}
+
+.animate-blob { 
+  animation: blob 7s infinite; 
+}
+
+.animation-delay-2000 { 
+  animation-delay: 2s; 
+}
+
+.animation-delay-4000 { 
+  animation-delay: 4s; 
+}
+
+/* Smooth scrolling for better mobile experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar on mobile for cleaner look */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
