@@ -143,7 +143,7 @@ Create a recipe and respond ONLY with valid JSON:
 {{"title": "Recipe Name", "ingredients": ["ingredient1", "ingredient2"], "instructions": ["step1", "step2"], "cooking_time": "X minutes", "chef_notes": "Chef tip"}}"""
         
         payload = {
-            "model": "google/gemma-7b-it:free",  # This one works!
+            "model": "mistralai/mistral-7b-instruct:free",  # This one works!
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
